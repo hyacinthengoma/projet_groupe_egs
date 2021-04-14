@@ -149,7 +149,8 @@ nav ul {
 
 #ftdiv1{
     display: grid;
-    grid-template-columns:  15% 17.5% 17.5% 17.5% 17.5% 15% ;
+    grid-template-columns:  15% 15% 15% 15% 15% 15% 15%;
+    gap: 3%;
     color: rgb(76, 76, 76);
     font-size: 15px;
     padding-bottom: 5vh;
@@ -185,6 +186,10 @@ nav ul {
 }
 
 
+#ftcontactesuivre{
+    
+}
+
 
 #ftcontactsuivre ul li{
     padding-bottom: 10px;
@@ -205,7 +210,7 @@ nav ul {
 /* ---------------------------------------hr----------------------------------- */
 
 #fthr1{
-    margin-left: 15%;
+    margin-left: 19%;
     margin-right: 15%;
     border: solid 0.1px rgb(76, 76, 76, 0.15);
 }
@@ -214,8 +219,10 @@ nav ul {
 
 #ftdiv2{
     display: grid;
-    grid-template-columns: 15% 21% 5% 5% 5% 5% 5% 5% 5% 5% 15%;
+    grid-template-columns: 18% 18% 5% 5% 5% 5% 5% 5% 5% 5% 17%;
     gap:1%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 #ftdiv2 div:not(:first-child){
@@ -224,7 +231,7 @@ nav ul {
 
 #ftlogotitle{
     grid-column: 2;
-    line-height: 5px;
+    line-height: 25px;
 }
 
 #ftlogotitle h4{
@@ -234,3 +241,45 @@ nav ul {
  #ftlogotitle p{
      font-size: 11px;
  }
+ 
+.ftlogojrn{
+    justify-items: center;
+    text-align: center;
+}
+
+.ftlogojrn img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------------------------ftdiv3---------------------------------------------------- */
+
+
+#ftdiv3{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+#ftdiv3 h5{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#ftdivlogoprt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 6vw;
+}
+
+#ftdivlogoprt img{
+    max-width: 100%;   
+}
+
+#ftdivlogoprt :nth-child(1){
+    grid-column: 2;
+}
