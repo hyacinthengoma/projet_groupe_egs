@@ -48,6 +48,7 @@ nav ul {
     padding-bottom: 1vh;
     max-width: 100%;
     background-size: cover;
+    margin-top: 1vh;
 }
 
 #hd_titre1 img {
@@ -71,6 +72,7 @@ nav ul {
     display: inline-block;
     margin-bottom: 5vh;
     font-weight: 300;
+    margin-top: 4vh;
 }
 
 #hd_titre1 h2:hover {
@@ -91,6 +93,8 @@ nav ul {
 
 #hd_text h2 {
     font-weight: 400;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 nav ul span:hover {
@@ -252,11 +256,12 @@ nav ul span:hover {
 .actu img {
     border-radius: 5px;
     box-shadow: -3px 5px 15px gray;
+    margin-bottom: 2vh;
 }
 
 .actu h4 {
     display: inline-block;
-    height: 20px;
+    height: 64px;
 }
 
 .texte-actu {
@@ -273,6 +278,7 @@ nav ul span:hover {
     text-decoration: none;
     font-weight: 600;
     color: rgb(126, 16, 230);
+    padding-top: 6vh;
 }
 
 
