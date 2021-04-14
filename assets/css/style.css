@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -139,7 +140,7 @@ nav ul span:hover {
 /********GAMINGS********/
 
 .mn-gamings {
-    width: 100%;
+    width: 100vw;
     background-color: black;
     display: grid;
     grid-template-columns: 15% 1fr 1fr 1fr 15%;
@@ -170,6 +171,7 @@ nav ul span:hover {
 
 .mn-gaming p {
     text-align: center;
+    min-height: 70px;
     margin: 5px 0;
 }
 
@@ -200,19 +202,37 @@ nav ul span:hover {
     grid-column: 4/5;
 }
 
+@media screen and (max-width: 1350px){
+
+    .mn-gamings{
+        grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    }
+    .mn-gaming h3{
+        font-size: 0.8rem !important;
+        display: inline-block;
+        height: 12px;
+    }
+    .mn-gaming p{
+        font-size: 0.8rem;
+    }
+    .mn-gaming a{
+        font-size: 0.8rem;
+        margin: 15px 0;
+    }
+
+}
 
 /******* LES NEWS*****/
 
 .mn-news {
-    width: 100%;
+    width: 100vw;
     padding: 100px 0;
     background-color: whitesmoke;
-    padding: 100px 0;
 }
 
 .les-news {
     display: grid;
-    grid-template-columns: 12% 3% 1fr  50px 1fr 50px 1fr 15%
+    grid-template-columns: 12% 3% 1fr  50px 1fr 50px 1fr 15%;
 
 }
 
@@ -226,7 +246,7 @@ nav ul span:hover {
 .les-news-text h2 {
     font-size: 2rem;
     letter-spacing: 1px;
-    font-weight: 4git 00;
+    font-weight: 400;
 }
 
 .les-news-text p {
@@ -285,11 +305,11 @@ nav ul span:hover {
 
 .actu h4 {
     display: inline-block;
-    height: 64px;
+    height: 50px;
 }
 
 .texte-actu {
-    height: 250px;
+    height: 200px;
     padding-bottom: 10px;
 }
 
@@ -304,6 +324,63 @@ nav ul span:hover {
     color: rgb(126, 16, 230);
     padding-top: 6vh;
 }
+
+@media screen and (max-width: 1200px){
+    .les-news{
+        grid-template-columns: 10% 1fr  20px 1fr 20px 1fr 10%;
+    }
+    .newsroom {
+        grid-column: 5/7;
+        grid-row: 1;
+    }
+    .newsroom a{
+        width: 80%;
+        padding: 10px 5px;
+    }
+    .les-news-text {
+        grid-row:1;
+    }
+    .les-news-text h2{
+        font-size: 1.5rem;
+    }
+    .les-news-text p{
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    .actus{
+        grid-template-columns: 10% 1fr  20px 1fr 20px 1fr 10%;  
+    }
+    .texte-actu{
+        height: 260px;
+    }
+}
+@media screen and (max-width: 900px){
+    .mn-news{
+        padding: 50px 0;
+    }
+    .les-news, .actus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10%;
+    }
+    .les-news-text h2, .les-news-text p{
+        text-align: center;
+        padding: 15px 0;
+    }
+   
+    .newsroom a{
+        width: 100%;
+    }
+    .texte-actu{
+        height: 160px;
+    }
+    .actu a {
+        padding: 20px 0;
+    }
+}
+
 
 
 /* ------------------------------ftdiv1--------------------------------- */
