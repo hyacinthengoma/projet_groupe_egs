@@ -5,6 +5,65 @@ body {
 
 
 
+h1 {
+    text-transform: uppercase;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    list-style: none;
+    padding: 6px;
+    float: right;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#hd_titre1 {
+    width: 100%;
+    background-image: url('../img/header-site-V2.webp');
+    color: white;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+}
+
+#hd_titre1 img {
+    transform: translate(50% 50%);
+    text-align: center;
+}
+
+#hd_titre1 h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+#hd_titre1 h2 {
+    text-transform: uppercase;
+    border: 1px solid white;
+    width: 25vw;
+    padding: 1rem;
+    display: inline-block;
+}
+
+#hd_text {
+    text-align: center;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+
+#hd_text {
+    color: rgb(76, 76, 76);
+>>>>>>> fd44b38f5d02cd63800fa14577564c17f7a11e91
+}
+
+
+/*****MAIN*********/
+
 /********GAMINGS********/
 
 
@@ -75,4 +134,3 @@ body {
     width: 100%;
     height: 70vh;
     background-color: whitesmoke;
-}
