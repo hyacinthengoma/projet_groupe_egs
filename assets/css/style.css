@@ -3,6 +3,148 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+=======
+
+
+h1 {
+    text-transform: uppercase;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    list-style: none;
+    padding: 6px;
+    float: right;
+    color: black;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#hd_titre1 {
+    width: 100%;
+    background-image: url('../img/header-site-V2.webp');
+    color: white;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+}
+
+#hd_titre1 img {
+    transform: translate(50% 50%);
+    text-align: center;
+}
+
+#hd_titre1 h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+#hd_titre1 h2 {
+    text-transform: uppercase;
+    border: 1px solid white;
+    width: 25vw;
+    padding: 1rem;
+    display: inline-block;
+}
+
+#hd_text {
+    text-align: center;
+    margin-left: 18vw;
+    margin-right: 18vw;
+}
+
+#hd_text {
+    color: rgb(76, 76, 76);
+>>>>>>> fd44b38f5d02cd63800fa14577564c17f7a11e91
+}
+
+
+/*****MAIN*********/
+
+/********GAMINGS********/
+
+
+
+.mn-gamings{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    gap:35px;
+    color: white;
+    padding: 60px 0;
+}
+
+.mn-gaming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* régléges items gamings */
+.mn-gaming img{
+    width: 70%;
+}
+.mn-gaming h3{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding: 0;
+}
+.mn-gaming p{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.mn-gaming a{
+    display: inline-block;
+    align-items: center;
+    width: 150px;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0;
+    padding: 10px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+/* Réglages grid Gamings */
+.mn-gaming-business-school{
+    grid-column: 2/3;
+}
+
+.mn-gaming-academy{
+    grid-column: 3/4;
+}
+
+.mn-gaming-guru{
+    grid-column: 4/5;
+
+}
+
+
+/******* LES NEWS*****/
+
+.mn-news{
+    width: 100%;
+    height: 70vh;
+    background-color: whitesmoke;
+}
+
 /* ------------------------------ftdiv1--------------------------------- */
 
 #ftdiv1{
@@ -69,3 +211,26 @@ body {
 }
 
 /* -----------------------------------------ftdiv2------------------------------------ */
+
+#ftdiv2{
+    display: grid;
+    grid-template-columns: 15% 21% 5% 5% 5% 5% 5% 5% 5% 5% 15%;
+    gap:1%;
+}
+
+#ftdiv2 div:not(:first-child){
+    padding-top: 20%;
+}
+
+#ftlogotitle{
+    grid-column: 2;
+    line-height: 5px;
+}
+
+#ftlogotitle h4{
+    color: rgb(76, 76, 76);
+}
+
+ #ftlogotitle p{
+     font-size: 11px;
+ }

@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+
+.titre{
+    color:#004F9F;
+    letter-spacing:3px;
+    margin-left: 72px;
+    width: 250px;
+    align-self: flex-start;
+}
+.titre h2{
+    font-size: 1.8rem;
+}
+
+.surlignage{
+    height: 3px;
+    margin-top: 10px;
+    background-color:#DFAF2C;
+}
+
+                      /***********HEADER*************/
+
+
+header{
+    width: 100%;
+    min-height:90vh;
+    min-height:800px;
+    display: flex;
+    justify-content: space-between;
+    background: url(img/cheval1.jpg) no-repeat; 
+    background-position:  center;
+    background-size:  100vw ;
+    color: #fff;
+    border-radius: 0 0 48px 48px;
+}
+
+header .logo{
+    width: 10vw;
+}
+
+header .logo img{
+    width: 60px;
+    margin: 49px 0 0 49px;
+}
+
+header nav{
+    width: 50vw;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 54px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+
+.gros-titre{
+    position: absolute;
+    top:250px;
+    left: 1000px;
+}
+.gros-titre h1{
+    font-size: 65px;
+    line-height: 1.4;
+    font-weight: 550;
+    text-shadow: 2px 2px blue;
+}
+
+
+                    /***********------MAIN---- *************/
+
+
+
+
+                    /***********EN IMAGE*************/
+
+
+
+
+.en-image{
+    width: 100%;
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.en-image video{
+    margin-top: 200px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.video{
+    position: relative;
+}
+
+
+
+                    /***********PENSIONS*************/
+
+
+
+
+.pensions{
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+ .titre-pension{
+     margin-bottom: 15vh;
+ }
+
+ .pensions-images{
+     display:grid;
+     width: 100%;
+     grid-template-columns:100px 1fr 1fr 1fr 100px;
+     gap: 10px;
+     grid-template-rows: 70vh;
+     margin-bottom: 10vh;
+ }
+.pension{
+
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+    grid-row: 1;
+
+}
+ .pension1{
+     background:url(img/cheval\ 2\ l&h.jpg);
+     background-size: cover;
+     background-position: center;
+     grid-column: 2/3;
+
+ }
+ .pension2{
+    background:url(img/cheval\ 3\ l&h.jpg);
+    background-size: cover;
+    background-position: center;
+     grid-column: 3/4;
+ }
+ .pension3{
+    background:url(img/cheval\ 4\ l&h.jpg);
+    background-size: cover;
+    background-position: center;
+     grid-column: 4/5;
+ }
+
+ .pension-txt{
+     position: absolute;
+     top: -100px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     background-color: transparent;
+     border-radius:10px;
+     color:transparent;
+     letter-spacing: .2rem;
+     padding: 50px ;
+     transition: transform 300ms ease-in-out;
+
+ }
+
+ .pension-txt:hover{
+    background-color: rgba(0, 0, 0, 0.856);
+    transform: translateY(100px);
+    color: white;
+
+ }
+
+ .pension-txt h3{
+     letter-spacing: .4rem;
+     padding-bottom:25px ;
+ }
+
+ .pension-txt p{
+     font-weight: 700px;
+     padding: 6px 0;
+
+ }
+ .pension-txt p:hover{
+    color:#DFAF2C;
+    cursor: pointer;
+ }
+
+ .boutons-pensions{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.boutons-pensions a{
+    display: inline-block;
+    width: 250px;
+    margin:0 15px;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 1rem;*
+    transition: transform 2s ease-in-out;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.514);
+}
+
+.boutons-pensions a:hover{
+    transform: scalex(1.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+
+}
+
+.btn1{
+    text-align: center;
+    background-color: #004F9F;
+}
+.btn2{
+    text-align: center;
+    background-color:#DFAF2C ;
+}
+
+.btn1:hover{
+    background-color:#DFAF2C ;
+}
+.btn2:hover{
+    background-color:#004F9F ;
+}
+
+
+
+
+              /***********TARIFS*************/
+
+
+
+
+
+.tarifs{
+    margin-bottom: 15vh;
+}
+.titre-tarifs{
+    margin-bottom: 20vh;
+}   
+
+
+
+.formule{
+    height: 80vh;
+    background-color: #004F9F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 100px;
+    border-radius: 20px;
+}
+
+.formule-sub{
+    width: 40%;
+    background-color: rgb(147, 199, 233);
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 100px;
+    margin: 30px 0;
+    font-size: 1.5rem;
+}
+.formule-sub h2{
+    font-size: 3rem;
+}
+.formule-sub h3{
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.formule-sub p{
+    margin-bottom: 15px;
+}
+
+
+
+               /***********VOS HOTES*************/
+
+
+
+
+.vos-hotes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+}
+.sub4{
+    margin-bottom: 10vh;
+}               
+
+.carte-presentation{
+    display: grid;
+    width: 100;
+    grid-template-columns:300px 1fr 1fr 100px 1fr 1fr 300px;
+}
+
+.identite{
+    border-radius:20px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 3px 5px rgba(0, 0, 255, 0.315);
+    margin: 15vh 0;
+    padding: 120px 50px 30px;
+    position: relative;
+}
+
+.id1{
+    grid-column: 2/4;
+    height:40vh ;
+}
+.id2{
+    grid-column: 5/7;
+    height:40vh ;
+}
+
+.identite img{
+    position: absolute;
+    top: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 2px solid #DFAF2C;
+}
+
+.identite h3{
+    margin-bottom: 20px;
+    color:#004F9F;
+}
+
+.identite p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.texte-hotes{
+    margin: 0 300px;
+    color: #004F9F;
+}
+
+.texte-hotes p{
+    text-align: center;
+    line-height: 1.5;
+    margin: 15px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+
+                  /***********CONTACT*************/
+
+                  
+
+
+.contact{
+    margin-bottom: 15vh;
+}
+.sub5{
+    margin-bottom: 15vh;
+}                  
+
+.map-formulaire{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px 1fr 1fr 100px;
+    grid-template-rows: 70vh 25vh;
+    margin: 0 30px;
+    background-color: #DFAF2C;
+    border-radius: 20px;
+}
+
+.map{
+    grid-column: 2/4;
+    grid-row: 1;
+    height: 60vh;
+    border-radius: 20px;
+    margin:30px 0;
+    
+}
+
+.formulaire{
+    grid-column:5/7 ;
+    grid-row: 1;
+    background-color:#e7d9b283 ;
+    margin: 30px 0;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.forms{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form{
+    margin: 15px 0;
+    width: 90%;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    border: none;
+    outline:none;
+    border-radius:20px;
+    padding: 10px 0 10px 20px;
+    resize: none;
+    margin-left: 15px;
+    color: #004F9F;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #004F9F;
+}
+
+#telephone,#submit{
+    width: 70%;
+}
+
+.form-submit {
+    align-self: center;
+    margin-left: 100px;
+    cursor: pointer;
+}
+#submit{
+    background-color: #DFAF2C;
+    color: white;
+    cursor: pointer;
+}
+
+.phones{
+    grid-column:5/7  ;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phones a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #004F9F;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+                            /*********** FOOTER *************/
+
+footer{
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 39%, rgba(0,79,159,0.342472022988883) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw 15vh 5vw;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav a{
+    margin: 10px 0;
+    text-decoration: none;
+    color: #004F9F;
+    font-weight: 600;
+}
+
+.logo-footer img{
+    width: 150px;
+}
+
+.socials-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.socials-footer img{
+    width: 50px;
+    border-radius: 100%;
+    margin:0 5px;
+}
+
+
+
+
+
