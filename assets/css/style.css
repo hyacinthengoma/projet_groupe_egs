@@ -2,3 +2,77 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+/********GAMINGS********/
+
+
+
+.mn-gamings{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    gap:35px;
+    color: white;
+    padding: 60px 0;
+}
+
+.mn-gaming{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* régléges items gamings */
+.mn-gaming img{
+    width: 70%;
+}
+.mn-gaming h3{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding: 0;
+}
+.mn-gaming p{
+    text-align: center;
+    margin: 5px 0;
+}
+
+.mn-gaming a{
+    display: inline-block;
+    align-items: center;
+    width: 150px;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0;
+    padding: 10px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+/* Réglages grid Gamings */
+.mn-gaming-business-school{
+    grid-column: 2/3;
+}
+
+.mn-gaming-academy{
+    grid-column: 3/4;
+}
+
+.mn-gaming-guru{
+    grid-column: 4/5;
+
+}
+
+
+/******* LES NEWS*****/
+
+.mn-news{
+    width: 100%;
+    height: 70vh;
+    background-color: whitesmoke;
+}
