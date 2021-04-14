@@ -10,24 +10,38 @@ h1 {
 nav ul li {
     text-transform: uppercase;
     list-style: none;
-    padding: 6px;
+    padding: 15px;
     float: right;
     color: black;
     font-weight: 600;
+    border-top: 4px solid transparent;
+}
+
+nav ul li:not(:last-child):hover {
+    color: blueviolet;
+    border-top: 4px solid blueviolet;
+}
+
+nav ul li:last-child {
+    background-color: grey;
+    border-radius: 26px;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 #hd_titre1 {
     width: 100%;
-    background-image: url('../img/header-site-V2.webp');
+    background-image: url('../img/bg.png');
     color: white;
     text-align: center;
     padding-top: 7vh;
-    padding-bottom: 8vh;
+    padding-bottom: 1vh;
+    max-width: 100%;
+    background-size: cover;
 }
 
 #hd_titre1 img {
@@ -38,14 +52,25 @@ nav ul {
 #hd_titre1 h1 {
     text-transform: uppercase;
     color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 #hd_titre1 h2 {
     text-transform: uppercase;
     border: 1px solid white;
-    width: 25vw;
+    width: 28vw;
     padding: 1rem;
     display: inline-block;
+    margin-bottom: 5vh;
+    font-weight: 300;
+}
+
+#hd_titre1 h2:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
 #hd_text {
@@ -56,4 +81,17 @@ nav ul {
 
 #hd_text {
     color: rgb(76, 76, 76);
+}
+
+#hd_text h2 {
+    font-weight: 400;
+}
+
+nav ul span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#hd_titre1 h2 i {
+    padding-left: 15px;
 }
