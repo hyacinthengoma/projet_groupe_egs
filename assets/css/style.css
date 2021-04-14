@@ -106,6 +106,31 @@ nav ul span:hover {
     padding-left: 15px;
 }
 
+@media screen and (max-width:414px) {
+    #hd_titre1 img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 25em;
+        max-width: 25em;
+    }
+    #hd_titre1 h2 {
+        font-size: 18px;
+        width: 52vw;
+    }
+    .mn-gamings {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+    }
+    .mn-gaming p {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .les-news {
+        display: block;
+    }
+}
+
 
 /*****MAIN*********/
 
@@ -318,7 +343,8 @@ nav ul span:hover {
     padding-bottom: 23px;
 }
 
-#ftcontactesuivre {}
+
+/* #ftcontactesuivre {} */
 
 #ftcontactsuivre ul li {
     padding-bottom: 10px;
