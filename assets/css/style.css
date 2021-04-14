@@ -3,6 +3,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 h1 {
     text-transform: uppercase;
 }
@@ -94,4 +100,310 @@ nav ul span:hover {
 
 #hd_titre1 h2 i {
     padding-left: 15px;
+}
+
+
+/*****MAIN*********/
+
+
+/********GAMINGS********/
+
+.mn-gamings {
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    gap: 35px;
+    color: white;
+    padding: 60px 0;
+}
+
+.mn-gaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* régléges items gamings */
+
+.mn-gaming img {
+    width: 70%;
+}
+
+.mn-gaming h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    padding: 0;
+}
+
+.mn-gaming p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.mn-gaming a {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0;
+    padding: 10px 15px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+
+/* Réglages grid Gamings */
+
+.mn-gaming-business-school {
+    grid-column: 2/3;
+}
+
+.mn-gaming-academy {
+    grid-column: 3/4;
+}
+
+.mn-gaming-guru {
+    grid-column: 4/5;
+}
+
+
+/******* LES NEWS*****/
+
+.mn-news {
+    width: 100%;
+    padding: 100px 0;
+    background-color: whitesmoke;
+    padding: 100px 0;
+}
+
+.les-news {
+    display: grid;
+    grid-template-columns: 12% 3% 1fr 1fr 1fr 15%;
+    gap: 50px;
+}
+
+
+/* Titre news et bouton */
+
+.les-news-text {
+    grid-column: 2/5;
+}
+
+.les-news-text h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 4git 00;
+}
+
+.les-news-text p {
+    color: rgb(76, 76, 76);
+}
+
+.newsroom {
+    grid-column: 5/6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.newsroom a {
+    text-align: center;
+    width: 200px;
+    font-weight: 800;
+    color: black;
+    padding: 20px 40px;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+
+/* les actus */
+
+.actus {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    gap: 50px;
+    padding: 70px 0;
+}
+
+.actu {
+    display: flex;
+    flex-direction: column;
+}
+
+.actu1 {
+    grid-column: 2/3;
+}
+
+.actu2 {
+    grid-column: 3/4;
+}
+
+.actu3 {
+    grid-column: 4/5;
+}
+
+.actu img {
+    border-radius: 5px;
+    box-shadow: -3px 5px 15px gray;
+}
+
+.actu h4 {
+    display: inline-block;
+    height: 20px;
+}
+
+.texte-actu {
+    height: 250px;
+    padding-bottom: 10px;
+}
+
+.texte-actu p {
+    line-height: 1.8;
+    color: rgb(76, 76, 76);
+}
+
+.actu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(126, 16, 230);
+}
+
+
+/* ------------------------------ftdiv1--------------------------------- */
+
+#ftdiv1 {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 15%;
+    gap: 3%;
+    color: rgb(76, 76, 76);
+    font-size: 15px;
+    padding-bottom: 5vh;
+    padding-top: 12vh;
+}
+
+#ftdiv1 div ul {
+    list-style: none;
+}
+
+.ftlisttitles {
+    font-weight: bold;
+}
+
+#ftlogo {
+    grid-column: 2;
+}
+
+#ftinfospratiques ul li {
+    padding-bottom: 17px;
+}
+
+#ftparents ul li {
+    padding-bottom: 10px;
+}
+
+#ftparents ul :nth-child(2) {
+    padding-bottom: 23px;
+}
+
+#ftcontactesuivre {}
+
+#ftcontactsuivre ul li {
+    padding-bottom: 10px;
+}
+
+#ftcontactsuivre ul :nth-child(2) {
+    padding-bottom: 20px;
+}
+
+#ftcontactsuivre ul :nth-child(4) {
+    padding-bottom: 20px;
+}
+
+#ftcontactsuivre ul :nth-child(4) i {
+    padding-right: 10px;
+}
+
+
+/* ---------------------------------------hr----------------------------------- */
+
+#fthr1 {
+    margin-left: 19%;
+    margin-right: 15%;
+    border: solid 0.1px rgb(76, 76, 76, 0.15);
+}
+
+
+/* -----------------------------------------ftdiv2------------------------------------ */
+
+#ftdiv2 {
+    display: grid;
+    grid-template-columns: 18% 18% 5% 5% 5% 5% 5% 5% 5% 5% 17%;
+    gap: 1%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#ftdiv2 div:not(:first-child) {
+    padding-top: 20%;
+}
+
+#ftlogotitle {
+    grid-column: 2;
+    line-height: 25px;
+}
+
+#ftlogotitle h4 {
+    color: rgb(76, 76, 76);
+}
+
+#ftlogotitle p {
+    font-size: 11px;
+}
+
+.ftlogojrn {
+    justify-items: center;
+    text-align: center;
+}
+
+.ftlogojrn img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------------------------ftdiv3---------------------------------------------------- */
+
+#ftdiv3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+#ftdiv3 h5 {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#ftdivlogoprt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 6vw;
+}
+
+#ftdivlogoprt img {
+    max-width: 100%;
+}
+
+#ftdivlogoprt :nth-child(1) {
+    grid-column: 2;
 }
