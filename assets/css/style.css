@@ -102,7 +102,7 @@ nav ul {
 
 .mn-gaming a{
     display: inline-block;
-    align-items: center;
+    text-align: center;
     width: 150px;
     font-weight: 500;
     color: white;
@@ -132,5 +132,91 @@ nav ul {
 
 .mn-news{
     width: 100%;
-    height: 70vh;
+    padding:100px 0;
     background-color: whitesmoke;
+    padding:100px 0;
+
+}
+.les-news{
+    display: grid;
+    grid-template-columns: 12% 3% 1fr 1fr 1fr 15%;
+    gap:50px;
+
+}
+/* Titre news et bouton */
+.les-news-text{
+   grid-column:2/5;
+}
+
+.les-news-text h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 4git 00;   
+}
+
+.les-news-text p{
+    color: rgb(76, 76, 76);
+
+}
+.newsroom{
+    grid-column: 5/6;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.newsroom a{
+    text-align: center;
+    width: 200px;
+    font-weight: 800;
+    color:black;
+    padding: 20px 40px;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+/* les actus */
+
+.actus{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr 15%;
+    gap:50px;
+    padding: 70px 0;
+}
+
+.actu{
+    display: flex;
+    flex-direction: column;
+}
+
+.actu1{
+    grid-column: 2/3;
+}
+.actu2{
+    grid-column: 3/4;
+}
+.actu3{
+    grid-column: 4/5;
+}
+.actu img{
+    border-radius: 5px;
+    box-shadow: -3px 5px 15px gray;
+}
+.actu h4{
+    display: inline-block;
+    height: 20px;
+}
+.texte-actu{
+    height: 250px;
+    padding-bottom: 10px;
+}
+.texte-actu p{
+line-height:1.8;
+color: rgb(76, 76, 76);
+}
+.actu a{
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(126, 16, 230);
+}
+
